@@ -1,0 +1,12 @@
+Package: saber
+Title: Standardization of address using Baidu natural language processing api easily in R
+Version: 0.1.0
+Author: Xiaojun Lin <linxiaojun@scu.edu.cn>
+Maintainer: Xiaojun Lin <linxiaojun@scu.edu.cn>
+Description: Standardization of address using Baidu natural language processing api easily in R.
+Imports: data.table, httr, jsonlite
+Depends: R (>= 4.0.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
