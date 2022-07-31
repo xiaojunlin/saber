@@ -27,7 +27,7 @@ getAddress <- function(data, address, confidence = 100, retry = 3) {
   baidu_api <- paste0("https://aip.baidubce.com/rpc/2.0/nlp/v1/address?access_token=", getOption("access_token"), "&charset=UTF-8" )
   df <- as.data.table(data)
   results <- data.table()
-  pb <- txtProgressBar(max = df[, .N], style = 3, char = "\u2588")
+  pb <- txtProgressBar(max = df[, .N], style = 3, char = ":", width = 70)
   # loop
   for (i in seq(1, df[, .N], 1)){
     body_addr <- toJSON(list(text = df[[address]][i], confidence = confidence), auto_unbox = TRUE)
